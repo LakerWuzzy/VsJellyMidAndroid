@@ -240,9 +240,7 @@ class PlayState extends MusicBeatState
 		FlxG.mouse.visible = false; // idont like this mouse being >:(
 			
 
-		#if windows
 		executeModchart = FileSystem.exists(Paths.lua(PlayState.SONG.song.toLowerCase()  + "/modchart"));
-		#end
 		#if !cpp
 		executeModchart = false; // FORCE disable for non cpp targets
 		#end
@@ -593,7 +591,7 @@ class PlayState extends MusicBeatState
 		add(healthBarBG);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(5, healthBarBG.y + 45 ,0,SONG.song + " " + (storyDifficulty == 3 ? "Ultra Hardcore" : storyDifficulty == 2 ? "Hardcore" : storyDifficulty == 1 ? "Hard" : "Peaceful") + (Main.watermarks ? " - KE " + MainMenuState.kadeEngineVer : ""), 20);
+		kadeEngineWatermark = new FlxText(5, healthBarBG.y + 45 ,0,SONG.song + " " + (storyDifficulty == 3 ? "Ultra Hardcore" : storyDifficulty == 2 ? "Hardcore" : storyDifficulty == 1 ? "Hard" : "Peaceful") + (Main.watermarks ? " - Port by Gaby - KE " + MainMenuState.kadeEngineVer : ""), 20);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		kadeEngineWatermark.borderSize = 1.25;
@@ -714,14 +712,12 @@ class PlayState extends MusicBeatState
 		generateStaticArrows(1);
 
 
-		#if windows
 		if (executeModchart)
 		{
 			luaModchart = ModchartState.createModchartState();
 			luaModchart.executeState('start',[PlayState.SONG.song]);
 		}
-		#end
-
+		
 		talking = false;
 		startedCountdown = true;
 		Conductor.songPosition = 0;
@@ -1356,7 +1352,6 @@ class PlayState extends MusicBeatState
 		if(FlxG.save.data.SpectatorMode)
 			camHUD.visible = false;
 
-		#if windows
 		if (executeModchart && luaModchart != null && songStarted)
 		{
 			luaModchart.setVar('songPos',Conductor.songPosition);
@@ -1412,8 +1407,6 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		#end
-
 		// reverse iterate to remove oldest notes first and not invalidate the iteration
 		// stop iteration as soon as a note is not removed
 		// all notes should be kept in the correct order and this is optimal, safe to do every frame/update
@@ -1460,14 +1453,13 @@ class PlayState extends MusicBeatState
 			#if windows
 			DiscordClient.changePresence("Chart Editor", null, null, true);
 			#end
+			
 			FlxG.switchState(new ChartingState());
-			#if windows
 			if (luaModchart != null)
 			{
 				luaModchart.die();
 				luaModchart = null;
 			}
-			#end
 		}
 
 
@@ -1515,25 +1507,25 @@ class PlayState extends MusicBeatState
 		if (FlxG.keys.justPressed.EIGHT)
 		{
 			FlxG.switchState(new AnimationDebug(SONG.player2));
-			#if windows
+			
 			if (luaModchart != null)
 			{
 				luaModchart.die();
 				luaModchart = null;
 			}
-			#end
+			
 		}
 
 		if (FlxG.keys.justPressed.ZERO)
 		{
 			FlxG.switchState(new AnimationDebug(SONG.player1));
-			#if windows
+			
 			if (luaModchart != null)
 			{
 				luaModchart.die();
 				luaModchart = null;
 			}
-			#end
+			
 		}
 
 		
@@ -1578,16 +1570,16 @@ class PlayState extends MusicBeatState
 		if (generatedMusic && PlayState.SONG.notes[Std.int(curStep / 16)] != null)
 		{
 
-			#if windows
+			
 			if (luaModchart != null)
 				luaModchart.setVar("mustHit",PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection);
-			#end
+			
 
 			if (camFollow.x != dad.getMidpoint().x + 150 && !PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection)
 			{
 				var offsetX = 0;
 				var offsetY = 0;
-				#if windows
+				
 				if (luaModchart != null)
 				{
 					offsetX = luaModchart.getVar("followXOffset", "float");
@@ -1595,12 +1587,12 @@ class PlayState extends MusicBeatState
 				}
 				camFollow.setPosition(dad.getMidpoint().x + 150 + dadnoteMovementXoffset, dad.getMidpoint().y - 100 + offsetY + dadnoteMovementYoffset);
 				
-				#end
+				
 				camFollow.setPosition(dad.getMidpoint().x + 150 + offsetX, dad.getMidpoint().y - 100 + offsetY);
-				#if windows
+				
 				if (luaModchart != null)
 					luaModchart.executeState('playerTwoTurn', []);
-				#end
+				
 				// camFollow.setPosition(lucky.getMidpoint().x - 120, lucky.getMidpoint().y + 210);
 
 				switch (dad.curCharacter)
@@ -1624,19 +1616,19 @@ class PlayState extends MusicBeatState
 			{
 				var offsetX = 0;
 				var offsetY = 0;
-				#if windows
+				
 				if (luaModchart != null)
 				{
 					offsetX = luaModchart.getVar("followXOffset", "float");
 					offsetY = luaModchart.getVar("followYOffset", "float");
 				}
-				#end
+				
 				camFollow.setPosition(boyfriend.getMidpoint().x - 100 + offsetX + bfnoteMovementXoffset, boyfriend.getMidpoint().y - 100 + offsetY + bfnoteMovementYoffset);
 
-				#if windows
+				
 				if (luaModchart != null)
 					luaModchart.executeState('playerOneTurn', []);
-				#end
+				
 
 				switch (curStage) 
 				{
@@ -1896,10 +1888,10 @@ class PlayState extends MusicBeatState
 						});
 
 
-						#if windows
+						
 						if (luaModchart != null)
 							luaModchart.executeState('playerTwoSing', [Math.abs(daNote.noteData), Conductor.songPosition]);
-						#end
+						
 
 						dad.holdTimer = 0;
 
@@ -2013,13 +2005,13 @@ class PlayState extends MusicBeatState
 		if (FlxG.save.data.fpsCap > 290)
 			(cast (Lib.current.getChildAt(0), Main)).setFPSCap(290);
 
-		#if windows
+		
 		if (luaModchart != null)
 		{
 			luaModchart.die();
 			luaModchart = null;
 		}
-		#end
+		
 
 		canPause = false;
 		FlxG.sound.music.volume = 0;
@@ -2054,13 +2046,13 @@ class PlayState extends MusicBeatState
 					transOut = FlxTransitionableState.defaultTransOut;
 					FlxG.switchState(new StoryMenuState());
 
-					#if windows
+					
 					if (luaModchart != null)
 					{
 						luaModchart.die();
 						luaModchart = null;
 					}
-					#end
+					
 
 					// if ()
 					StoryMenuState.weekUnlocked[Std.int(Math.min(storyWeek + 1, StoryMenuState.weekUnlocked.length - 1))] = true;
@@ -2835,15 +2827,36 @@ class PlayState extends MusicBeatState
 			resyncVocals();
 		}
 
-		#if windows
+
+		if(SONG.song.toLowerCase() == 'atrocity')
+		{
+			switch(curStep)
+			{
+				case 767:
+					FlxTween.tween(FlxG.camera, {zoom: 1.6}, 12, {ease: FlxEase.quadOut});
+				case 1512: 
+					FlxTween.tween(FlxG.camera, {zoom: 1.5}, 1, {ease: FlxEase.quadOut});
+				case 1514:
+					dad.playAnim('watchThis', true);
+				case 1535:
+					remove(dad);
+					dad = new Character(100, 100, 'skeletonguitar');
+					dad.x -= 340;
+					dad.y -= 335;
+					add(dad);
+					FlxTween.tween(FlxG.camera, {zoom: 1.7}, 8, {ease: FlxEase.quadOut});
+				case 1876:		
+					dad.playAnim('whatIsIt', true);
+				
+			}
+		}
+
 		if (executeModchart && luaModchart != null)
 		{
 			luaModchart.setVar('curStep',curStep);
 			luaModchart.executeState('stepHit',[curStep]);
 		}
-		#end
-
-
+		
 
 
 	}
@@ -2856,16 +2869,13 @@ class PlayState extends MusicBeatState
 			notes.sort(FlxSort.byY, (FlxG.save.data.downscroll ? FlxSort.ASCENDING : FlxSort.DESCENDING));
 		}
 
-		#if windows
 		if (executeModchart && luaModchart != null)
 		{
 			luaModchart.setVar('curBeat',curBeat);
 			luaModchart.executeState('beatHit',[curBeat]);
 		}
-		#end
 
 		// instead of doing it every step, why not every beat, ik it gets less real time accurate but cmon, do we really care about this small detail? - Tiago
-		#if windows
 		// Song duration in a float, useful for the time left feature
 		songLength = FlxG.sound.music.length;
 
