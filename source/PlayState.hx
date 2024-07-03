@@ -67,6 +67,7 @@ using StringTools;
 class PlayState extends MusicBeatState
 {
 	public static var instance:PlayState = null;
+	public static var luaModchart:ModchartState = null;
 
 	public static var curStage:String = '';
 	public static var SONG:SwagSong;
@@ -700,8 +701,6 @@ class PlayState extends MusicBeatState
 	var perfectMode:Bool = false;
 
 	var luaWiggles:Array<WiggleEffect> = [];
-	
-	public static var luaModchart:ModchartState.hx = null;
 
 	function startCountdown():Void
 	{
