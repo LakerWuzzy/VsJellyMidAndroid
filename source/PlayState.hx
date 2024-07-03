@@ -51,10 +51,6 @@ import flixel.util.FlxStringUtil;
 import flixel.util.FlxTimer;
 import haxe.Json;
 import lime.utils.Assets;
-import openfl.display.BlendMode;
-import openfl.display.StageQuality;
-import openfl.filters.ShaderFilter;
-import openfl.filters.ColorMatrixFilter;
 import Sys;
 import sys.FileSystem;
 
@@ -625,7 +621,6 @@ class PlayState extends MusicBeatState
 		SpectatorModeState.scrollFactor.set();
 
 		if(FlxG.save.data.SpectatorMode && !loadRep) 
-		#if android androidControls.visible = false; #end
 		add(SpectatorModeState);
 
 		iconP1 = new HealthIcon(SONG.player1, true);
@@ -2052,7 +2047,7 @@ class PlayState extends MusicBeatState
 
 					transIn = FlxTransitionableState.defaultTransIn;
 					transOut = FlxTransitionableState.defaultTransOut;
-					FlxG.switchState(new StoryMenuState());
+					FlxG.switchState(new FreeplayState());
 
 					#if windows
 					if (luaModchart != null)
