@@ -2834,30 +2834,7 @@ class PlayState extends MusicBeatState
 		{
 			resyncVocals();
 		}
-
-
-		if(SONG.song.toLowerCase() == 'atrocity')
-		{
-			switch(curStep)
-			{
-				case 767:
-					FlxTween.tween(FlxG.camera, {zoom: 1.6}, 12, {ease: FlxEase.quadOut});
-				case 1512: 
-					FlxTween.tween(FlxG.camera, {zoom: 1.5}, 1, {ease: FlxEase.quadOut});
-				case 1514:
-					dad.playAnim('watchThis', true);
-				case 1535:
-					remove(dad);
-					dad = new Character(100, 100, 'skeletonguitar');
-					dad.x -= 340;
-					dad.y -= 335;
-					add(dad);
-					FlxTween.tween(FlxG.camera, {zoom: 1.7}, 8, {ease: FlxEase.quadOut});
-				case 1876:		
-					dad.playAnim('whatIsIt', true);
-				
-			}
-		}
+	}
 
 		#if windows
 		if (executeModchart && luaModchart != null)
