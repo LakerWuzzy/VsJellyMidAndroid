@@ -668,7 +668,7 @@ class PlayState extends MusicBeatState
 		
 		#if android
         addAndroidControls();
-        #end
+        #end	
 		
 		startingSong = true;
 
@@ -710,7 +710,6 @@ class PlayState extends MusicBeatState
 	function startCountdown():Void
 	{
 		inCutscene = false;
-		
 		#if android androidControls.visible = true; #end
 
 		generateStaticArrows(0);
