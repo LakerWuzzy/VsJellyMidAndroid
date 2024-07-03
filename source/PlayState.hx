@@ -57,7 +57,6 @@ import openfl.filters.ShaderFilter;
 import openfl.filters.ColorMatrixFilter;
 import Sys;
 import sys.FileSystem;
-import FileSystem;
 
 #if windows
 import Discord.DiscordClient;
