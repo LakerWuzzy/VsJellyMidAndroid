@@ -174,7 +174,7 @@ class MainMenuState extends MusicBeatState
 		//textBox.visible = false;
 		
 		#if android
-        addVirtualPad(UP_DOWN, A_B);
+        addVirtualPad(NONE, A_B);
         #end
 
 		super.create();
@@ -245,6 +245,10 @@ class MainMenuState extends MusicBeatState
 					if (controls.BACK)
 					{
 						FlxG.switchState(new TitleState());
+					}
+					if (controls.ACCEPT)
+					{
+						FlxG.switchState(new Credits());
 					}
 				}
 				
