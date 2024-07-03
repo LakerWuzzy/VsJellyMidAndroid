@@ -55,13 +55,11 @@ import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 import openfl.filters.ColorMatrixFilter;
+import Sys;
+import sys.FileSystem;
 
 #if windows
 import Discord.DiscordClient;
-#end
-#if windows
-import Sys;
-import sys.FileSystem;
 #end
 
 using StringTools;
@@ -702,10 +700,8 @@ class PlayState extends MusicBeatState
 	var perfectMode:Bool = false;
 
 	var luaWiggles:Array<WiggleEffect> = [];
-
-	#if windows
+	
 	public static var luaModchart:ModchartState = null;
-	#end
 
 	function startCountdown():Void
 	{
@@ -1625,7 +1621,7 @@ class PlayState extends MusicBeatState
 			{
 				var offsetX = 0;
 				var offsetY = 0;
-				#if windows
+				#if android
 				if (luaModchart != null)
 				{
 					offsetX = luaModchart.getVar("followXOffset", "float");
