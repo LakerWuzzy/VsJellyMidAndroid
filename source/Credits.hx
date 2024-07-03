@@ -24,7 +24,7 @@ class Credits extends MusicBeatState
 
 	private static var creditsStuff:Array<Dynamic> = [ //Name - Icon name - Description - Link - BG Color
 		['PORTER'],
-		['Gaby Wuzzy', 'luumi', 'Porter - hi, eu sou o tal porter', 'https://youtube.com/@gabewuzx?si=Vl3JS9kJWR6ak-Lp', 0xFF251937],
+		['GaBY WUZZY', 'luumi', 'Porter - hi, eu sou o tal porter', 'https://youtube.com/@gabewuzx?si=Vl3JS9kJWR6ak-Lp', 0xFF251937],
 		['VS jELLYMID TEaM'],
 		['THEGaBODIaZ', 'gabo', 'Creator - Main artist & Animator, Composer of Jellymid, Cover Creator of Atrocity MC Version, Charter', 'https://youtube.com/thegabodiaz', 0xFF5EEBD8],
 		['TRaCEDINPURPLE', 'tiago', 'Co-Creator - Main Coder, Menus', 'https://youtube.com/tracedinpurple', 0xFF41009C],

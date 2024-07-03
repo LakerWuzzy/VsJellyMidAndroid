@@ -2834,7 +2834,6 @@ class PlayState extends MusicBeatState
 		{
 			resyncVocals();
 		}
-	}
 
 		#if windows
 		if (executeModchart && luaModchart != null)
