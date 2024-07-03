@@ -701,7 +701,7 @@ class PlayState extends MusicBeatState
 
 	var luaWiggles:Array<WiggleEffect> = [];
 	
-	public static var luaModchart:ModchartState = null;
+	public static var luaModchart:ModchartState.hx = null;
 
 	function startCountdown():Void
 	{
