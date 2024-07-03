@@ -172,6 +172,10 @@ class MainMenuState extends MusicBeatState
         //textBox.updateHitbox();
 		//add(textBox);
 		//textBox.visible = false;
+		
+		#if android
+        addVirtualPad(UP_DOWN, A_B);
+        #end
 
 		super.create();
 	}
