@@ -593,7 +593,7 @@ class PlayState extends MusicBeatState
 		add(healthBarBG);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(5, healthBarBG.y + 45 ,0,SONG.song + " " + (storyDifficulty == 3 ? "Ultra Hardcore" : storyDifficulty == 2 ? "Hardcore" : storyDifficulty == 1 ? "Hard" : "Peaceful") + (Main.watermarks ? " - KE " + MainMenuState.kadeEngineVer : ""), 20);
+		kadeEngineWatermark = new FlxText(5, healthBarBG.y + 45 ,0,SONG.song + " " + (storyDifficulty == 3 ? "Ultra Hardcore" : storyDifficulty == 2 ? "Hardcore" : storyDifficulty == 1 ? "Hard" : "Peaceful") + (Main.watermarks ? " - Port by Gaby - KE " + MainMenuState.kadeEngineVer : ""), 20);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		kadeEngineWatermark.borderSize = 1.25;
@@ -625,6 +625,7 @@ class PlayState extends MusicBeatState
 		SpectatorModeState.scrollFactor.set();
 
 		if(FlxG.save.data.SpectatorMode && !loadRep) 
+		#if android androidControls.visible = false; #end
 		add(SpectatorModeState);
 
 		iconP1 = new HealthIcon(SONG.player1, true);
