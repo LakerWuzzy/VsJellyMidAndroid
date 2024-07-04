@@ -1335,16 +1335,6 @@ class PlayState extends MusicBeatState
 		perfectMode = false;
 		#end
 	
-		//	dad.dance();
-		//	boyfriend.playAnim('idle');
-		if(SONG.song.toLowerCase() == 'atrocity')
-		{
-			for (i in 0...4)
-			{
-				strumLineNotes.members[i].visible = false;
-			}
-		}
-
 		if (FlxG.keys.justPressed.ONE && !FlxG.save.data.SpectatorMode)
 			camHUD.visible = !camHUD.visible;
 
