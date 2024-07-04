@@ -424,7 +424,6 @@ class PlayState extends MusicBeatState
 				
 		if(SONG.song.toLowerCase() == 'atrocity')
 			{
-					// doing this to save humanity from lag spike!!! - Tiago
 				remove(dad);
 				dad = new Character(100, 100, 'skeletonguitar');
 				dad.x -= 340;
@@ -435,7 +434,6 @@ class PlayState extends MusicBeatState
 				dad.x -= 340;
 				dad.y -= 335;
 				add(dad);
-					//stpupipd code but should work and preventt lagsppike
 			}
 					
 
@@ -2825,10 +2823,6 @@ class PlayState extends MusicBeatState
 		{
 			switch(curStep)
 			{
-				case 767:
-					FlxTween.tween(FlxG.camera, {zoom: 1.6}, 12, {ease: FlxEase.quadOut});
-				case 1512: 
-					FlxTween.tween(FlxG.camera, {zoom: 1.5}, 1, {ease: FlxEase.quadOut});
 				case 1514:
 					dad.playAnim('watchThis', true);
 				case 1535:
@@ -2837,7 +2831,6 @@ class PlayState extends MusicBeatState
 					dad.x -= 340;
 					dad.y -= 335;
 					add(dad);
-					FlxTween.tween(FlxG.camera, {zoom: 1.7}, 8, {ease: FlxEase.quadOut});
 				case 1876:		
 					dad.playAnim('whatIsIt', true);
 				
@@ -2963,27 +2956,6 @@ class PlayState extends MusicBeatState
 				}
 		}
 		
-		
-		if (SONG.song.toLowerCase() == 'atrocity' && curBeat >= 64 && curBeat < 124)
-			{
-				FlxG.camera.zoom += 0.020;
-				camHUD.zoom += 0.02;
-			}
-		if (SONG.song.toLowerCase() == 'atrocity' && curBeat >= 128 && curBeat < 192)
-			{
-				FlxG.camera.zoom += 0.020;
-				camHUD.zoom += 0.02;
-			}
-		if (SONG.song.toLowerCase() == 'atrocity' && curBeat >= 320 && curBeat < 378)
-			{
-				FlxG.camera.zoom += 0.020;
-				camHUD.zoom += 0.02;
-			}
-		if (SONG.song.toLowerCase() == 'atrocity' && curBeat >= 384 && curBeat < 448)
-			{
-				FlxG.camera.zoom += 0.050;
-				camHUD.zoom += 0.02;
-			}
 			if(SONG.song.toLowerCase() == 'jellymid')
 			{
 				if (curBeat % 2 == 0) 
