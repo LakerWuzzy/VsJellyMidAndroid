@@ -2858,23 +2858,6 @@ class PlayState extends MusicBeatState
 			notes.sort(FlxSort.byY, (FlxG.save.data.downscroll ? FlxSort.ASCENDING : FlxSort.DESCENDING));
 		}
 
-		#if windows
-		if (executeModchart && luaModchart != null)
-		{
-			luaModchart.setVar('curBeat',curBeat);
-			luaModchart.executeState('beatHit',[curBeat]);
-		}
-		#end
-
-		// instead of doing it every step, why not every beat, ik it gets less real time accurate but cmon, do we really care about this small detail? - Tiago
-		#if windows
-		// Song duration in a float, useful for the time left feature
-		songLength = FlxG.sound.music.length;
-
-		// Updating Discord Rich Presence (with Time Left)
-		DiscordClient.changePresence(detailsText + " " + SONG.song + " (" + storyDifficultyText + ") " + Ratings.GenerateLetterRank(accuracy), "Acc: " + HelperFunctions.truncateFloat(accuracy, 2) + "% | Score: " + songScore + " | Misses: " + misses  , iconRPC,true,  songLength - Conductor.songPosition);
-		#end
-
 		if (SONG.notes[Math.floor(curStep / 16)] != null)
 		{
 			if (SONG.notes[Math.floor(curStep / 16)].changeBPM)
@@ -2938,22 +2921,6 @@ class PlayState extends MusicBeatState
 		{
 			if(dad.animation.finished)
 				dad.dance();
-		}
-
-
-		switch (curStage)
-		{
-			case 'jelly':
-				if(FlxG.save.data.distractions)
-				{
-					if(curBeat >= 1 && curBeat < 379)
-					bgskeletons.animation.play('bop', false);
-					if(curBeat >= 379 && curBeat < 380)
-						bgskeletons.animation.play('transition', false);
-					if(curBeat >= 381)
-					bgskeletons.animation.play('idleback', false);
-
-				}
 		}
 		
 			if(SONG.song.toLowerCase() == 'jellymid')
