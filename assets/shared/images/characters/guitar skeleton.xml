@@ -1,129 +1,130 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="guitar skeleton.png"><SubTexture name="guitar skeleton idle0000" x="0" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0001" x="1284" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0002" x="2568" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0003" x="3852" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0004" x="5136" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0005" x="6420" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0006" x="7704" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0007" x="8988" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0008" x="10272" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0009" x="11556" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0010" x="12840" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0011" x="0" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0012" x="1284" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0013" x="2568" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton idle0014" x="3852" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0000" x="5136" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0001" x="6420" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0002" x="7704" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0003" x="8988" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0004" x="10272" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0005" x="11556" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0006" x="12840" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0007" x="0" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0008" x="1284" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0009" x="2568" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0010" x="3852" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0011" x="5136" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0012" x="6420" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0013" x="7704" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton left0014" x="8988" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0000" x="10272" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0001" x="11556" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0002" x="12840" y="1448" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0003" x="0" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0004" x="1284" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0005" x="2568" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0006" x="3852" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0007" x="5136" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0008" x="6420" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0009" x="7704" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0010" x="8988" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0011" x="10272" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0012" x="11556" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0013" x="12840" y="2172" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton down0014" x="0" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0000" x="1284" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0001" x="2568" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0002" x="3852" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0003" x="5136" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0004" x="6420" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0005" x="7704" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0006" x="8988" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0007" x="10272" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0008" x="11556" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0009" x="12840" y="2896" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0010" x="0" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0011" x="1284" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0012" x="2568" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0013" x="3852" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton up0014" x="5136" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0000" x="6420" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0001" x="7704" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0002" x="8988" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0003" x="10272" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0004" x="11556" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0005" x="12840" y="3620" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0006" x="0" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0007" x="1284" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0008" x="2568" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0009" x="3852" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0010" x="5136" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0011" x="6420" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0012" x="7704" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0013" x="8988" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton right0014" x="10272" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0000" x="11556" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0001" x="12840" y="4344" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0002" x="0" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0003" x="1284" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0004" x="2568" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0005" x="3852" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0006" x="5136" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0007" x="6420" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0008" x="7704" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0009" x="8988" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0010" x="10272" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0011" x="11556" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0012" x="12840" y="5068" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0013" x="0" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0014" x="1284" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0015" x="2568" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0016" x="3852" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0017" x="5136" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0018" x="6420" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0019" x="7704" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0020" x="8988" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0021" x="10272" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0022" x="11556" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0023" x="12840" y="5792" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0024" x="0" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0025" x="1284" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0026" x="2568" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0027" x="3852" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0028" x="5136" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0029" x="6420" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0030" x="7704" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0031" x="8988" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0032" x="10272" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0033" x="11556" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0034" x="12840" y="6516" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0035" x="0" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0036" x="1284" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0037" x="2568" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0038" x="3852" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0039" x="5136" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0040" x="6420" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0041" x="7704" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0042" x="8988" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0043" x="10272" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0044" x="11556" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0045" x="12840" y="7240" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0046" x="0" y="7964" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0047" x="1284" y="7964" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0048" x="2568" y="7964" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0049" x="3852" y="7964" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0050" x="5136" y="7964" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
-<SubTexture name="guitar skeleton what is it0051" x="6420" y="7964" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
+<TextureAtlas imagePath="guitar skeleton.png">
+<SubTexture name="guitar skeleton idle0000" x="4667" y="4994" width="474" height="516" frameX="-421" frameY="-81" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0001" x="4191" y="4994" width="476" height="522" frameX="-421" frameY="-80" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0002" x="2336" y="4994" width="477" height="535" frameX="-421" frameY="-68" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0003" x="476" y="4994" width="478" height="545" frameX="-421" frameY="-59" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0004" x="0" y="4994" width="476" height="547" frameX="-420" frameY="-58" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0005" x="1868" y="4994" width="468" height="536" frameX="-419" frameY="-70" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0006" x="1410" y="4994" width="458" height="540" frameX="-419" frameY="-66" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0007" x="5497" y="0" width="454" height="551" frameX="-419" frameY="-56" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0008" x="3176" y="4431" width="452" height="554" frameX="-420" frameY="-53" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0009" x="2722" y="4431" width="454" height="555" frameX="-420" frameY="-53" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0010" x="3628" y="4431" width="455" height="554" frameX="-420" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0011" x="3628" y="4431" width="455" height="554" frameX="-420" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0012" x="3628" y="4431" width="455" height="554" frameX="-420" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0013" x="3628" y="4431" width="455" height="554" frameX="-420" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton idle0014" x="3628" y="4431" width="455" height="554" frameX="-420" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0000" x="2853" y="1823" width="411" height="598" frameX="-380" frameY="-35" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0001" x="478" y="2680" width="412" height="598" frameX="-378" frameY="-35" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0002" x="1305" y="2680" width="415" height="596" frameX="-374" frameY="-36" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0003" x="1720" y="2680" width="414" height="596" frameX="-375" frameY="-36" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0004" x="2134" y="2680" width="406" height="596" frameX="-386" frameY="-35" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0005" x="3312" y="0" width="389" height="593" frameX="-416" frameY="-34" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0006" x="3701" y="1171" width="407" height="582" frameX="-412" frameY="-39" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0007" x="496" y="3279" width="420" height="576" frameX="-405" frameY="-42" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0008" x="4180" y="575" width="425" height="574" frameX="-400" frameY="-42" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0009" x="3311" y="3279" width="427" height="575" frameX="-397" frameY="-41" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0010" x="3701" y="2332" width="426" height="577" frameX="-397" frameY="-40" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0011" x="3701" y="2332" width="426" height="577" frameX="-397" frameY="-40" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0012" x="3701" y="2332" width="426" height="577" frameX="-397" frameY="-40" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0013" x="3701" y="2332" width="426" height="577" frameX="-397" frameY="-40" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton left0014" x="3701" y="2332" width="426" height="577" frameX="-397" frameY="-40" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0000" x="2853" y="611" width="436" height="609" frameX="-437" frameY="-27" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0001" x="1866" y="2029" width="433" height="613" frameX="-439" frameY="-26" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0002" x="1902" y="1358" width="430" height="617" frameX="-441" frameY="-25" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0003" x="950" y="680" width="427" height="619" frameX="-443" frameY="-25" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0004" x="1444" y="2029" width="422" height="614" frameX="-445" frameY="-30" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0005" x="890" y="2680" width="415" height="598" frameX="-447" frameY="-43" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0006" x="3701" y="1753" width="420" height="579" frameX="-439" frameY="-58" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0007" x="4180" y="2296" width="422" height="571" frameX="-435" frameY="-65" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0008" x="4180" y="2867" width="424" height="571" frameX="-433" frameY="-65" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0009" x="4180" y="1149" width="425" height="574" frameX="-432" frameY="-63" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0010" x="916" y="3279" width="426" height="576" frameX="-432" frameY="-62" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0011" x="916" y="3279" width="426" height="576" frameX="-432" frameY="-62" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0012" x="916" y="3279" width="426" height="576" frameX="-432" frameY="-62" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0013" x="916" y="3279" width="426" height="576" frameX="-432" frameY="-62" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton down0014" x="916" y="3279" width="426" height="576" frameX="-432" frameY="-62" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0000" x="5047" y="994" width="403" height="435" frameX="-423" frameY="-119" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0001" x="5047" y="1429" width="402" height="433" frameX="-424" frameY="-121" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0002" x="5047" y="2294" width="400" height="431" frameX="-425" frameY="-124" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0003" x="5047" y="1862" width="399" height="432" frameX="-426" frameY="-123" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0004" x="5047" y="552" width="402" height="442" frameX="-426" frameY="-111" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0005" x="5497" y="4280" width="408" height="496" frameX="-426" frameY="-84" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0006" x="5497" y="551" width="416" height="551" frameX="-425" frameY="-59" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0007" x="3738" y="3279" width="419" height="571" frameX="-425" frameY="-51" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0008" x="4180" y="1723" width="419" height="573" frameX="-425" frameY="-50" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0009" x="3239" y="3856" width="417" height="567" frameX="-426" frameY="-53" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0010" x="4631" y="0" width="416" height="563" frameX="-426" frameY="-55" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0011" x="4631" y="0" width="416" height="563" frameX="-426" frameY="-55" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0012" x="4631" y="0" width="416" height="563" frameX="-426" frameY="-55" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0013" x="4631" y="0" width="416" height="563" frameX="-426" frameY="-55" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton up0014" x="4631" y="0" width="416" height="563" frameX="-426" frameY="-55" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0000" x="1342" y="3279" width="492" height="576" frameX="-435" frameY="-55" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0001" x="1834" y="3279" width="494" height="576" frameX="-436" frameY="-55" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0002" x="2328" y="3279" width="498" height="576" frameX="-437" frameY="-55" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0003" x="0" y="3279" width="496" height="577" frameX="-437" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0004" x="2826" y="3279" width="485" height="576" frameX="-434" frameY="-56" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0005" x="3656" y="3856" width="474" height="567" frameX="-428" frameY="-64" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0006" x="2318" y="3856" width="462" height="568" frameX="-424" frameY="-62" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0007" x="2780" y="3856" width="459" height="568" frameX="-422" frameY="-61" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0008" x="473" y="3856" width="458" height="569" frameX="-422" frameY="-60" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0009" x="931" y="3856" width="460" height="569" frameX="-422" frameY="-61" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0010" x="1391" y="3856" width="460" height="569" frameX="-423" frameY="-61" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0011" x="1391" y="3856" width="460" height="569" frameX="-423" frameY="-61" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0012" x="1391" y="3856" width="460" height="569" frameX="-423" frameY="-61" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0013" x="1391" y="3856" width="460" height="569" frameX="-423" frameY="-61" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton right0014" x="1391" y="3856" width="460" height="569" frameX="-423" frameY="-61" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0000" x="3628" y="4431" width="455" height="554" frameX="-420" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0001" x="1359" y="4431" width="455" height="556" frameX="-420" frameY="-52" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0002" x="1814" y="4431" width="454" height="556" frameX="-420" frameY="-50" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0003" x="4083" y="4431" width="451" height="554" frameX="-421" frameY="-51" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0004" x="954" y="4994" width="456" height="544" frameX="-414" frameY="-58" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0005" x="3271" y="4994" width="462" height="524" frameX="-404" frameY="-75" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0006" x="3733" y="4994" width="458" height="524" frameX="-405" frameY="-73" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0007" x="2813" y="4994" width="458" height="525" frameX="-403" frameY="-72" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0008" x="5497" y="2706" width="453" height="525" frameX="-406" frameY="-74" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0009" x="5497" y="3756" width="449" height="524" frameX="-408" frameY="-77" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0010" x="5497" y="3231" width="448" height="525" frameX="-409" frameY="-78" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0011" x="5497" y="2177" width="448" height="529" frameX="-409" frameY="-76" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0012" x="5497" y="1643" width="448" height="534" frameX="-409" frameY="-72" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0013" x="5497" y="1102" width="450" height="541" frameX="-408" frameY="-67" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0014" x="5047" y="0" width="450" height="552" frameX="-408" frameY="-61" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0015" x="0" y="4431" width="450" height="563" frameX="-408" frameY="-58" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0016" x="4180" y="0" width="451" height="575" frameX="-408" frameY="-56" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0017" x="3701" y="586" width="453" height="585" frameX="-408" frameY="-57" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0018" x="2540" y="2680" width="455" height="596" frameX="-408" frameY="-60" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0019" x="2853" y="1220" width="456" height="603" frameX="-409" frameY="-66" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0020" x="2853" y="0" width="459" height="611" frameX="-409" frameY="-71" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0021" x="2370" y="657" width="463" height="638" frameX="-410" frameY="-58" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0022" x="1436" y="1358" width="466" height="660" frameX="-411" frameY="-46" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0023" x="0" y="1358" width="471" height="671" frameX="-408" frameY="-39" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0024" x="1888" y="674" width="474" height="673" frameX="-406" frameY="-37" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0025" x="1414" y="674" width="474" height="673" frameX="-406" frameY="-37" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0026" x="1414" y="0" width="474" height="674" frameX="-407" frameY="-35" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0027" x="478" y="680" width="472" height="676" frameX="-409" frameY="-32" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0028" x="942" y="0" width="472" height="678" frameX="-410" frameY="-29" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0029" x="0" y="0" width="471" height="680" frameX="-412" frameY="-25" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0030" x="471" y="0" width="471" height="680" frameX="-413" frameY="-23" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0031" x="0" y="680" width="478" height="678" frameX="-406" frameY="-21" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0032" x="1888" y="0" width="482" height="674" frameX="-402" frameY="-21" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0033" x="471" y="1358" width="483" height="670" frameX="-401" frameY="-20" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0034" x="954" y="1358" width="482" height="665" frameX="-401" frameY="-20" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0035" x="2370" y="0" width="483" height="657" frameX="-400" frameY="-21" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0036" x="0" y="2029" width="485" height="651" frameX="-398" frameY="-22" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0037" x="485" y="2029" width="485" height="643" frameX="-398" frameY="-23" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0038" x="2370" y="1295" width="482" height="635" frameX="-401" frameY="-25" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0039" x="970" y="2029" width="474" height="624" frameX="-409" frameY="-29" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0040" x="2299" y="2029" width="475" height="612" frameX="-407" frameY="-34" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0041" x="0" y="2680" width="478" height="599" frameX="-403" frameY="-41" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0042" x="3701" y="0" width="479" height="586" frameX="-401" frameY="-48" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0043" x="0" y="3856" width="473" height="575" frameX="-406" frameY="-53" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0044" x="1851" y="3856" width="467" height="569" frameX="-411" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0045" x="4130" y="3856" width="459" height="565" frameX="-418" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0046" x="450" y="4431" width="454" height="561" frameX="-422" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0047" x="904" y="4431" width="455" height="558" frameX="-421" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0048" x="2268" y="4431" width="454" height="556" frameX="-421" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0049" x="4534" y="4431" width="455" height="554" frameX="-420" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0050" x="3628" y="4431" width="455" height="554" frameX="-420" frameY="-54" frameWidth="1284" frameHeight="724" />
+<SubTexture name="guitar skeleton what is it0051" x="3628" y="4431" width="455" height="554" frameX="-420" frameY="-54" frameWidth="1284" frameHeight="724" />
 </TextureAtlas>
