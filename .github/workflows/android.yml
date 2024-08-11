@@ -1,7 +1,7 @@
 name: Build
 on: workflow_dispatch
 jobs:
-  Luundows:
+  Windows:
     runs-on: windows-latest
     steps:
       - name: Checkout
@@ -50,7 +50,7 @@ jobs:
           name: Windows Build
           path: export\release\windows\bin\*
           if-no-files-found: error
-  Luumidroid:
+  Android:
     runs-on: ubuntu-latest
     permissions:
         contents: write
