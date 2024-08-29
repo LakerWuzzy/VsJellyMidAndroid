@@ -51,11 +51,17 @@ import flixel.util.FlxStringUtil;
 import flixel.util.FlxTimer;
 import haxe.Json;
 import lime.utils.Assets;
-import Sys;
-import sys.FileSystem;
+import openfl.display.BlendMode;
+import openfl.display.StageQuality;
+import openfl.filters.ShaderFilter;
+import openfl.filters.ColorMatrixFilter;
 
 #if windows
 import Discord.DiscordClient;
+#end
+#if windows
+import Sys;
+import sys.FileSystem;
 #end
 
 using StringTools;
@@ -422,6 +428,7 @@ class PlayState extends MusicBeatState
 				
 		if(SONG.song.toLowerCase() == 'atrocity')
 			{
+					// doing this to save humanity from lag spike!!! - Tiago
 				remove(dad);
 				dad = new Character(100, 100, 'skeletonguitar');
 				dad.x -= 340;
@@ -432,6 +439,7 @@ class PlayState extends MusicBeatState
 				dad.x -= 340;
 				dad.y -= 335;
 				add(dad);
+					//stpupipd code but should work and preventt lagsppike
 			}
 					
 
@@ -573,7 +581,7 @@ class PlayState extends MusicBeatState
 		add(healthBarBG);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(5, healthBarBG.y + 45 ,0,SONG.song + " " + (storyDifficulty == 3 ? "Ultra Hardcore" : storyDifficulty == 2 ? "Hardcore" : storyDifficulty == 1 ? "Hard" : "Peaceful") + (Main.watermarks ? " - Port by Ashley - KE " + MainMenuState.kadeEngineVer : ""), 20);
+		kadeEngineWatermark = new FlxText(5, healthBarBG.y + 45 ,0,SONG.song + " " + (storyDifficulty == 3 ? "Ultra Hardcore" : storyDifficulty == 2 ? "Hardcore" : storyDifficulty == 1 ? "Hard" : "Peaceful") + (Main.watermarks ? " - KE " + MainMenuState.kadeEngineVer : ""), 20);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		kadeEngineWatermark.borderSize = 1.25;
@@ -604,7 +612,7 @@ class PlayState extends MusicBeatState
 		SpectatorModeState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		SpectatorModeState.scrollFactor.set();
 
-		if(FlxG.save.data.SpectatorMode) 
+		if(FlxG.save.data.SpectatorMode && !loadRep) 
 		add(SpectatorModeState);
 
 		iconP1 = new HealthIcon(SONG.player1, true);
@@ -692,7 +700,8 @@ class PlayState extends MusicBeatState
 
 		generateStaticArrows(0);
 		generateStaticArrows(1);
-		
+
+
 		#if windows
 		if (executeModchart)
 		{
@@ -1319,6 +1328,16 @@ class PlayState extends MusicBeatState
 		perfectMode = false;
 		#end
 	
+		//	dad.dance();
+		//	boyfriend.playAnim('idle');
+		if(SONG.song.toLowerCase() == 'atrocity')
+		{
+			for (i in 0...4)
+			{
+				strumLineNotes.members[i].visible = false;
+			}
+		}
+
 		if (FlxG.keys.justPressed.ONE && !FlxG.save.data.SpectatorMode)
 			camHUD.visible = !camHUD.visible;
 
@@ -2012,7 +2031,7 @@ class PlayState extends MusicBeatState
 
 					transIn = FlxTransitionableState.defaultTransIn;
 					transOut = FlxTransitionableState.defaultTransOut;
-					FlxG.switchState(new FreeplayState());
+					FlxG.switchState(new StoryMenuState());
 
 					#if windows
 					if (luaModchart != null)
@@ -2769,6 +2788,10 @@ class PlayState extends MusicBeatState
 		{
 			switch(curStep)
 			{
+				case 767:
+					FlxTween.tween(FlxG.camera, {zoom: 1.6}, 12, {ease: FlxEase.quadOut});
+				case 1512: 
+					FlxTween.tween(FlxG.camera, {zoom: 1.5}, 1, {ease: FlxEase.quadOut});
 				case 1514:
 					dad.playAnim('watchThis', true);
 				case 1535:
@@ -2777,6 +2800,7 @@ class PlayState extends MusicBeatState
 					dad.x -= 340;
 					dad.y -= 335;
 					add(dad);
+					FlxTween.tween(FlxG.camera, {zoom: 1.7}, 8, {ease: FlxEase.quadOut});
 				case 1876:		
 					dad.playAnim('whatIsIt', true);
 				
@@ -2803,6 +2827,23 @@ class PlayState extends MusicBeatState
 		{
 			notes.sort(FlxSort.byY, (FlxG.save.data.downscroll ? FlxSort.ASCENDING : FlxSort.DESCENDING));
 		}
+
+		#if windows
+		if (executeModchart && luaModchart != null)
+		{
+			luaModchart.setVar('curBeat',curBeat);
+			luaModchart.executeState('beatHit',[curBeat]);
+		}
+		#end
+
+		// instead of doing it every step, why not every beat, ik it gets less real time accurate but cmon, do we really care about this small detail? - Tiago
+		#if windows
+		// Song duration in a float, useful for the time left feature
+		songLength = FlxG.sound.music.length;
+
+		// Updating Discord Rich Presence (with Time Left)
+		DiscordClient.changePresence(detailsText + " " + SONG.song + " (" + storyDifficultyText + ") " + Ratings.GenerateLetterRank(accuracy), "Acc: " + HelperFunctions.truncateFloat(accuracy, 2) + "% | Score: " + songScore + " | Misses: " + misses  , iconRPC,true,  songLength - Conductor.songPosition);
+		#end
 
 		if (SONG.notes[Math.floor(curStep / 16)] != null)
 		{
@@ -2868,7 +2909,44 @@ class PlayState extends MusicBeatState
 			if(dad.animation.finished)
 				dad.dance();
 		}
+
+
+		switch (curStage)
+		{
+			case 'jelly':
+				if(FlxG.save.data.distractions)
+				{
+					if(curBeat >= 1 && curBeat < 379)
+					bgskeletons.animation.play('bop', false);
+					if(curBeat >= 379 && curBeat < 380)
+						bgskeletons.animation.play('transition', false);
+					if(curBeat >= 381)
+					bgskeletons.animation.play('idleback', false);
+
+				}
+		}
 		
+		
+		if (SONG.song.toLowerCase() == 'atrocity' && curBeat >= 64 && curBeat < 124)
+			{
+				FlxG.camera.zoom += 0.020;
+				camHUD.zoom += 0.02;
+			}
+		if (SONG.song.toLowerCase() == 'atrocity' && curBeat >= 128 && curBeat < 192)
+			{
+				FlxG.camera.zoom += 0.020;
+				camHUD.zoom += 0.02;
+			}
+		if (SONG.song.toLowerCase() == 'atrocity' && curBeat >= 320 && curBeat < 378)
+			{
+				FlxG.camera.zoom += 0.020;
+				camHUD.zoom += 0.02;
+			}
+		if (SONG.song.toLowerCase() == 'atrocity' && curBeat >= 384 && curBeat < 448)
+			{
+				FlxG.camera.zoom += 0.050;
+				camHUD.zoom += 0.02;
+			}
 			if(SONG.song.toLowerCase() == 'jellymid')
 			{
 				if (curBeat % 2 == 0) 
