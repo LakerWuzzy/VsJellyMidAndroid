@@ -174,7 +174,7 @@ class MainMenuState extends MusicBeatState
 		//textBox.visible = false;
 		
 		#if android
-        addVirtualPad(NONE, A_B);
+        addVirtualPad(NONE, B);
         #end
 
 		super.create();
