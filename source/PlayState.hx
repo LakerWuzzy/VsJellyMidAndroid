@@ -89,7 +89,7 @@ class PlayState extends MusicBeatState
 	var songLength:Float = 0;
 	var kadeEngineWatermark:FlxText;
 
-	#if windows
+	#if !windows
 	// Discord RPC variables
 	var storyDifficultyText:String = "";
 	var iconRPC:String = "";
@@ -463,18 +463,6 @@ class PlayState extends MusicBeatState
 		add(dad);
 
 		add(boyfriend);
-			
-		if (loadRep)
-		{
-			FlxG.watch.addQuick('rep rpesses',repPresses);
-			FlxG.watch.addQuick('rep releases',repReleases);
-
-			FlxG.save.data.SpectatorMode = true;
-			FlxG.save.data.scrollSpeed = rep.replay.noteSpeed;
-			FlxG.save.data.downscroll = rep.replay.isDownscroll;
-			// FlxG.watch.addQuick('Queued',inputsQueued);
-		}
-
 
 		Conductor.songPosition = -5000;
 
@@ -618,7 +606,7 @@ class PlayState extends MusicBeatState
 		SpectatorModeState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		SpectatorModeState.scrollFactor.set();
 
-		if(FlxG.save.data.SpectatorMode && !loadRep) 
+		if(FlxG.save.data.SpectatorMode) 
 		add(SpectatorModeState);
 
 		iconP1 = new HealthIcon(SONG.player1, true);
@@ -1984,15 +1972,6 @@ class PlayState extends MusicBeatState
 
 	function endSong():Void
 	{
-		if (!loadRep)
-			rep.SaveReplay(saveNotes);
-		else
-		{
-			FlxG.save.data.SpectatorMode = false;
-			FlxG.save.data.scrollSpeed = 1;
-			FlxG.save.data.downscroll = false;
-		}
-
 		if (FlxG.save.data.fpsCap > 290)
 			(cast (Lib.current.getChildAt(0), Main)).setFPSCap(290);
 
