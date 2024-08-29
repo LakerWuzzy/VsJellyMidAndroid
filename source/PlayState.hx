@@ -320,8 +320,6 @@ class PlayState extends MusicBeatState
 				defaultCamZoom = 1.2;
 				curStage = 'jelly';
 
-				docaching();
-
 				var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('jelly/jellybensky'));
 				bg.setGraphicSize(Std.int(bg.width * 1.5));
 				bg.antialiasing = false;
@@ -575,7 +573,7 @@ class PlayState extends MusicBeatState
 		add(healthBarBG);
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(5, healthBarBG.y + 45 ,0,SONG.song + " " + (storyDifficulty == 3 ? "Ultra Hardcore" : storyDifficulty == 2 ? "Hardcore" : storyDifficulty == 1 ? "Hard" : "Peaceful") + (Main.watermarks ? " - Port by Gaby - KE " + MainMenuState.kadeEngineVer : ""), 20);
+		kadeEngineWatermark = new FlxText(5, healthBarBG.y + 45 ,0,SONG.song + " " + (storyDifficulty == 3 ? "Ultra Hardcore" : storyDifficulty == 2 ? "Hardcore" : storyDifficulty == 1 ? "Hard" : "Peaceful") + (Main.watermarks ? " - Port by Ashley - KE " + MainMenuState.kadeEngineVer : ""), 20);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		kadeEngineWatermark.borderSize = 1.25;
@@ -2632,37 +2630,6 @@ class PlayState extends MusicBeatState
 			accuracy = Math.max(0,totalNotesHit / totalPlayed * 100);
 			accuracyDefault = Math.max(0, totalNotesHitDefault / totalPlayed * 100);
 		}
-
-    function docaching(){
-		var images = [];
-		var xml = [];
-		trace("caching");
-
-		for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/shared/images/jellyleandeath")))
-		{
-			if (!i.endsWith(".png"))
-				continue;
-			images.push(i);
-
-			if (!i.endsWith(".xml"))
-				continue;
-			xml.push(i);
-		}
-		for (i in images)
-		{
-			var replaced = i.replace(".png","");
-			FlxG.bitmap.add(Paths.image("jellyleandeath/" + replaced,"shared"));
-			trace("cached " + replaced);
-		}
-	
-	for (i in xml)
-		{
-			var replaced = i.replace(".xml","");
-			FlxG.bitmap.add(Paths.image("jellyleandeath/" + replaced,"shared"));
-			trace("cached " + replaced);
-		}
-	}
-
 
 	function getKeyPresses(note:Note):Int
 	{
